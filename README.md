@@ -1,17 +1,17 @@
 # Hi, I'm Aniket 👋
 
-**Python & AI Engineer** — I build agentic systems, ML pipelines, and production-grade APIs.
+**AI Engineer** — I build LLM-powered systems, RAG pipelines, and ML APIs end-to-end.
 
-Currently finishing my B.Tech in CS at VIT Bhopal (2026) and working on [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) — a multi-stage LLM pipeline that converts natural language into validated app schemas.
+Currently finishing my B.Tech in CS at VIT Bhopal (2026) and working on [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) — a 5-stage LLM pipeline that converts natural language into validated full-stack schemas with auto-repair.
 
 ---
 
 ## What I build
 
-- **Agentic AI** — LangChain tool-calling agents, multi-step autonomous systems, RAG pipelines
-- **ML Systems** — fraud detection with XGBoost + SHAP explainability, imbalanced datasets
-- **Production APIs** — FastAPI backends with Docker, PostgreSQL, deployed on Railway & HuggingFace
-- **Full-stack** — React frontends on Vercel, end-to-end from idea to live URL
+- **Agentic AI** — LangChain tool-calling agents, autonomous routing between vector search and live web, RAG pipelines with zero-hallucination citation design
+- **ML Systems** — fraud detection with XGBoost + SHAP explainability, imbalanced datasets, AUC-ROC 0.9792
+- **Production APIs** — FastAPI backends with Docker Compose, PostgreSQL, WAL-mode SQLite, deployed on Railway & HuggingFace
+- **Full-stack** — React frontends on Vercel, Streamlit dashboards, end-to-end from idea to live URL
 
 ---
 
@@ -19,33 +19,34 @@ Currently finishing my B.Tech in CS at VIT Bhopal (2026) and working on [App Com
 
 | Project | What it does | Stack |
 |---|---|---|
-| [ResearchMind](https://github.com/Aniket-Jaiswal2002/research-agent) | Agentic AI that autonomously decides whether to query uploaded PDFs or live web to answer questions — zero hallucination design | LangChain · FastAPI · FAISS · Groq · Tavily · Docker |
-| [Fraud Detection ML System](https://github.com/Aniket-Jaiswal2002/fraud-detection) | Detects credit card fraud on severely imbalanced data (0.17% fraud rate). XGBoost + Random Forest ensemble, AUC-ROC 0.9792, SHAP explainability | XGBoost · scikit-learn · SMOTE · SHAP · FastAPI |
-| [PDF Chat](https://github.com/Aniket-Jaiswal2002/pdf-chat) | RAG document assistant — upload PDFs, ask questions, get cited answers | FastAPI · FAISS · sentence-transformers · Groq · React |
-| [URL Shortener API](https://github.com/Aniket-Jaiswal2002/url-shortener) | Production-ready URL shortener with custom codes, click tracking, live stats | FastAPI · SQLAlchemy · PostgreSQL · Docker · pytest |
-| [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) *(in progress)* | Natural language → validated app schema (DB, API, UI, Auth) via 5-stage LLM pipeline with auto-repair | Claude API · Vanilla JS |
-| [XAUUSD Trading Bot](https://github.com/Aniket-Jaiswal2002/xauusd-trading-bot) | Automated Gold trading with EMA/RSI strategy, ATR-based SL/TP, full backtester, Telegram alerts | MetaTrader 5 · pandas · Telegram API |
+| [ResearchMind](https://github.com/Aniket-Jaiswal2002/research-agent) | LangChain agent that autonomously decides whether to query uploaded PDFs (FAISS) or live web (Tavily) — zero hallucination design, sub-second Groq inference | LangChain · FastAPI · FAISS · Groq · Tavily · Docker · Railway |
+| [AWS RAG Q&A System](https://github.com/Aniket-Jaiswal2002/AWS_RAG) | Legal document RAG with dual PDF parsing, paragraph-aware chunking, hallucination sentinel, and Streamlit analytics dashboard backed by SQLite | FastAPI · FAISS · FastEmbed · Groq · pdfplumber · SQLite · Streamlit |
+| [Fraud Detection ML System](https://github.com/Aniket-Jaiswal2002/fraud-detection) | Detects credit card fraud on severely imbalanced data (0.17% fraud rate). SMOTE on train-only, AUC-ROC 0.9792, SHAP explainability per prediction | XGBoost · scikit-learn · SMOTE · SHAP · FastAPI |
+| [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) *(in progress)* | Natural language → validated app schema (DB tables, API endpoints, UI pages, auth roles) via 5-stage LLM pipeline with targeted auto-repair at ~$0.02/run | Claude API · Vanilla JS |
 
 ---
 
 ## Stack
 
 ```
-Languages   Python · JavaScript · HTML/CSS · SQL
-AI / ML     LangChain · RAG · FAISS · XGBoost · scikit-learn · SHAP · SMOTE
-            Groq LLaMA 3 · OpenAI API · sentence-transformers · Tavily
-Backend     FastAPI · Django · SQLAlchemy · PostgreSQL · SQLite
-Frontend    React · Vercel
-DevOps      Docker · Docker Compose · Railway · HuggingFace Spaces · GitHub Actions
+Languages    Python · JavaScript · HTML/CSS · SQL
+AI / LLM     LangChain · LangChain Agents · RAG · FAISS · FastEmbed
+             Groq LLaMA 3 · OpenAI API · sentence-transformers · Tavily
+ML           XGBoost · Random Forest · scikit-learn · SMOTE · SHAP · pandas · numpy
+Backend      FastAPI · SQLAlchemy · Pydantic v2 · PostgreSQL · SQLite · Docker
+Frontend     React · Streamlit · Vercel
+DevOps       Docker Compose · Railway · HuggingFace Spaces · GitHub Actions
 ```
 
 ---
 
 ## Certifications
 
-- **Agentic Systems and Design** — iHUB DivyaSampark, IIT Roorkee
-- **Cloud Computing** — NPTEL, IIT Kharagpur
-- **API Development with FastAPI** — Udemy
+- **Agentic Systems and Design** — iHUB DivyaSampark, IIT Roorkee *(LangGraph, LLMOps, eval frameworks, memory architecture, observability, deployment)*
+- **Cloud Computing** — NPTEL, IIT Kharagpur *(IaaS/PaaS/SaaS, virtualization, distributed computing, cloud security)*
+- **Problem Solving (Intermediate)** — HackerRank · [Verify ↗](https://www.hackerrank.com/certificates/2cfae15a7a75)
+- **JavaScript (Intermediate)** — HackerRank · [Verify ↗](https://www.hackerrank.com/certificates/66a361aad67c)
+- **Scientific Computing with Python** — freeCodeCamp · [Verify ↗](https://www.freecodecamp.org/certification/ANIKET__JAISWAL/python-v9)
 
 ---
 
@@ -58,6 +59,3 @@ DevOps      Docker · Docker Compose · Railway · HuggingFace Spaces · GitHub 
 ---
 
 📬 aniketjaiswal112002@gmail.com · [LinkedIn](https://linkedin.com/in/aniket-jaiswal-6748a5248)
-
-
-
