@@ -1,61 +1,40 @@
-# Hi, I'm Aniket 👋
+Hi, I'm Aniket 👋
 
-**AI Engineer** — I build LLM-powered systems, RAG pipelines, and ML APIs end-to-end.
+AI Engineer focused on LLM agents, RAG pipelines and the APIs around them. I recently finished an AI/ML internship at Atlys, where I authored 28 PRs across an internal AI assistant and an agent-testing platform. I like turning a vague problem into a small working prototype and checking it honestly.
 
-Currently finishing my B.Tech in CS at VIT Bhopal (2026) and working on [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) — a 5-stage LLM pipeline that converts natural language into validated full-stack schemas with auto-repair.
+Open to AI/ML, agent and forward-deployed engineering roles and internships. Based in Delhi / Gurugram, India.
 
----
+Experience
 
-## What I build
+AI/ML Intern, Atlys (Aug 2026 – Oct 2026)
 
-- **Agentic AI** — LangChain tool-calling agents, autonomous routing between vector search and live web, RAG pipelines with zero-hallucination citation design
-- **ML Systems** — fraud detection with XGBoost + SHAP explainability, imbalanced datasets, AUC-ROC 0.9792
-- **Production APIs** — FastAPI backends with Docker Compose, PostgreSQL, WAL-mode SQLite, deployed on Railway & HuggingFace
-- **Full-stack** — React frontends on Vercel, Streamlit dashboards, end-to-end from idea to live URL
-
----
-
-## Featured Projects
-
-| Project | What it does | Stack |
-|---|---|---|
-| [ResearchMind](https://github.com/Aniket-Jaiswal2002/research-agent) | LangChain agent that autonomously decides whether to query uploaded PDFs (FAISS) or live web (Tavily) — zero hallucination design, sub-second Groq inference | LangChain · FastAPI · FAISS · Groq · Tavily · Docker · Railway |
-| [AWS RAG Q&A System](https://github.com/Aniket-Jaiswal2002/AWS_RAG) | Legal document RAG with dual PDF parsing, paragraph-aware chunking, hallucination sentinel, and Streamlit analytics dashboard backed by SQLite | FastAPI · FAISS · FastEmbed · Groq · pdfplumber · SQLite · Streamlit |
-| [Fraud Detection ML System](https://github.com/Aniket-Jaiswal2002/fraud-detection) | Detects credit card fraud on severely imbalanced data (0.17% fraud rate). SMOTE on train-only, AUC-ROC 0.9792, SHAP explainability per prediction | XGBoost · scikit-learn · SMOTE · SHAP · FastAPI |
-| [App Compiler](https://github.com/Aniket-Jaiswal2002/app-compiler) *(in progress)* | Natural language → validated app schema (DB tables, API endpoints, UI pages, auth roles) via 5-stage LLM pipeline with targeted auto-repair at ~$0.02/run | Claude API · Vanilla JS |
-
----
-
-## Stack
-
-```
-Languages    Python · JavaScript · HTML/CSS · SQL
-AI / LLM     LangChain · LangChain Agents · RAG · FAISS · FastEmbed
-             Groq LLaMA 3 · OpenAI API · sentence-transformers · Tavily
+Gideon Employees: persistent AI workers on top of Atlys's internal AI assistant. 6 PRs, about 17k lines, all merged, open to every Atlys employee.
+Instrumentation agent: turns Figma + a PRD into an analytics event spec. Merged after review, with 70 tests; it caught 3 of 3 split cases, and I cut its warnings from 32 to 10.
+Agent-testing environment (team of 4): a simulated business backend (7-table schema, availability, booking and cancellation, simulated clock, CI and staging) covering 10 business types.
+Reliability fixes: a 500 error caused by a transaction held open during a Slack call, and overlapping scheduler runs behind 456 cancellation errors in 24 hours.
+Featured projects
+Project	What it does	Stack
+ResearchMind	A tool-calling agent that chooses between searching uploaded PDFs (FAISS) and the live web (Tavily) and cites page numbers or URLs. Includes an iteration cap and duplicate-query detection to stop tool-call loops.	LangChain · FastAPI · FAISS · FastEmbed · Groq (LLaMA 3.1) · Tavily · React · Docker
+SHL Assessment Recommender	A stateless API that turns a vague hiring request into a grounded shortlist from a 370-item catalog. Time-budget checks run in plain code after the LLM was found to miscount. A replay harness runs 10 sample conversations.	Python · FastAPI · scikit-learn (TF-IDF) · Groq (LLaMA 3.3)
+AWS Customer Agreement RAG	Q&A over a legal document. Paragraph-aware chunks (500 tokens, 100 overlap) and a refusal path that returns ANSWER_NOT_IN_DOCUMENT when the context is insufficient. Analytics endpoint over 35 seeded test queries.	FastAPI · FAISS · FastEmbed · Groq · PyMuPDF · pdfplumber · SQLite · Streamlit
+Credit card fraud detection	284,807 transactions, 0.17% fraud. SMOTE on the training split only to avoid leakage. XGBoost reached 0.9792 AUC-ROC, and SHAP showed V14, V17 and V10 as the top signals.	XGBoost · Random Forest · SMOTE · SHAP · FastAPI
+App Compiler	A staged LLM pipeline: intent extraction, architecture, schema generation, a code-based validator, and one repair pass. Turns a plain-English app idea into DB, API, UI and auth schemas.	Next.js · TypeScript · Groq (LLaMA 3.3 70B)
+Stack
+Languages    Python · TypeScript / JavaScript · SQL
+AI / LLM     LangChain · RAG · FAISS · FastEmbed · Groq (LLaMA 3.x) · Tavily · Claude Code
 ML           XGBoost · Random Forest · scikit-learn · SMOTE · SHAP · pandas · numpy
-Backend      FastAPI · SQLAlchemy · Pydantic v2 · PostgreSQL · SQLite · Docker
-Frontend     React · Streamlit · Vercel
-DevOps       Docker Compose · Railway · HuggingFace Spaces · GitHub Actions
-```
+Backend      FastAPI · REST APIs · PostgreSQL · ClickHouse · SQLite · pytest
+Platform     Docker · Kubernetes (manifests) · GitHub Actions · Grafana · Loki
+Frontend     React · Next.js · Streamlit
+Certifications
+Certification Program in Agentic Systems and Design: iHUB DivyaSampark, IIT Roorkee
+Generative AI and LLMs: IBM (Coursera, Jul 2026)
+Foundations of AI and Machine Learning: Coursera (Jul 2026)
+Cloud Computing: NPTEL, IIT Kharagpur
+Problem Solving (Intermediate): HackerRank · Verify ↗
+Scientific Computing with Python: freeCodeCamp · Verify ↗
+Live demos
+ResearchMind → researchmind-sigma.vercel.app (web search; PDF upload needs a larger server, see the repo README)
+Sakshi Interiors (freelance) → sakshiinteriors.in
 
----
-
-## Certifications
-
-- **Agentic Systems and Design** — iHUB DivyaSampark, IIT Roorkee *(LangGraph, LLMOps, eval frameworks, memory architecture, observability, deployment)*
-- **Cloud Computing** — NPTEL, IIT Kharagpur *(IaaS/PaaS/SaaS, virtualization, distributed computing, cloud security)*
-- **Problem Solving (Intermediate)** — HackerRank · [Verify ↗](https://www.hackerrank.com/certificates/2cfae15a7a75)
-- **JavaScript (Intermediate)** — HackerRank · [Verify ↗](https://www.hackerrank.com/certificates/66a361aad67c)
-- **Scientific Computing with Python** — freeCodeCamp · [Verify ↗](https://www.freecodecamp.org/certification/ANIKET__JAISWAL/python-v9)
-
----
-
-## Live demos
-
-- ResearchMind → [researchmind-sigma.vercel.app](https://researchmind-sigma.vercel.app)
-- PDF Chat → [pdf-chat-tawny.vercel.app](https://pdf-chat-tawny.vercel.app)
-- Sakshi Interiors (freelance) → [sakshiinteriors.in](https://sakshiinteriors.in)
-
----
-
-📬 aniketjaiswal112002@gmail.com · [LinkedIn](https://linkedin.com/in/aniket-jaiswal-6748a5248)
+📬 aniketjaiswal112002@gmail.com · LinkedIn
